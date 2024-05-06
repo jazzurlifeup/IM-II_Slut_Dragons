@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+}
+
+.starter {
+    grid-column: 2 / span 12;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.starterpic {
+    grid-column: 2 / span 12;
+    display: flex;
+    justify-self: center;
+}
+
+.starterpic img {
+    width: 90vw;
+    
+}
+
+.starter p {
+    color: white;
+    font-size: 1.7vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 0vw;
+    padding-top: 2vw;
+}
