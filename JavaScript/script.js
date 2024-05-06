@@ -1,8 +1,13 @@
-var request = new XMLHttpRequest()
-
-request.open ('GET', 'https://rickandmortyapi.com/api', true) 
-
-request.onload = function () {
-}
-
-request.send ()
+fetch('https://rickandmortyapi.com/api')
+  .then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();  // Parse the JSON from the response
+  })
+  .then(data => {
+    console.log(data);  // Handle the data from the API
+  })
+  .catch(error => {
+    console.error('There was a problem with your fetch operation:', error);
+  });
