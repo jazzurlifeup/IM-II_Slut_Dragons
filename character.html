@@ -49,6 +49,29 @@
         <!-- Character cards will be dynamically added here -->
     </div>
 
-    <script src="characters.js"></script>
+    <script>
+        fetch('https://rickandmortyapi.com/api/character') 
+          .then(response => response.json())
+          .then(data => {
+            displayCharacters(data);
+          })
+          .catch(error => console.error('Error:', error));
+
+        function displayCharacters(characters) {
+            const container = document.getElementById('characters');
+            characters.results.forEach(character => {
+                const characterCard = document.createElement('div');
+                characterCard.classList.add('character-card');
+                characterCard.innerHTML = `
+                    <h3 class="character-name">${character.name}</h3>
+                    <p class="character-info">Status: ${character.status}</p>
+                    <img class="character-image" src="${character.image}" alt="Image of ${character.name}">
+                    <p class="character-info">Species: ${character.species}</p>
+                    <p class="character-info">Gender: ${character.gender}</p>
+                `;
+                container.appendChild(characterCard);
+            });
+        }
+    </script>
 </body>
 </html>
