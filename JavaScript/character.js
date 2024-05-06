@@ -11,14 +11,14 @@ function displayCharacters(characters) {
         const characterElement = document.createElement('div');
         characterElement.className = 'character-card'; // Adding a class for styling purposes
         characterElement.innerHTML = `
-            <h3>${character.name}</h3>
-            <img src="${character.image}" alt="${character.name}">
-            <p>Status: ${character.status}</p>
-            <p>Species: ${character.species}</p>
-            <p>Gender: ${character.gender}</p>
-            <p>Origin: ${character.origin.name}</p>
-            <p>Location: ${character.location.name}</p>
-            <a href="${character.url}" target="_blank">More Info</a>
+            <h3 class="character-name">${character.name}</h3>
+            <img class="character-image" src="${character.image}" alt="Image of ${character.name}">
+            <p class="character-info">Status: ${character.status}</p>
+            <p class="character-info">Species: ${character.species}</p>
+            <p class="character-info">Gender: ${character.gender}</p>
+            <p class="character-info">Origin: ${character.origin.name}</p>
+            <p class="character-info">Location: ${character.location.name}</p>
+            <a class="character-info" href="${character.url}" target="_blank">More Info</a>
         `;
         container.appendChild(characterElement);
     });
