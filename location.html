@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Locations</title>
+    <style>
+        /* Style for location cards */
+        .location-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rick and Morty Locations</h1>
+    <div id="locations"></div>
+
+    <script>
+        fetch('https://rickandmortyapi.com/api/location')
+          .then(response => response.json())
+          .then(data => {
+            displayLocations(data.results);
+          })
+          .catch(error => console.error('Error fetching locations:', error));
+        
+        function displayLocations(locations) {
+            const container = document.getElementById('locations');
+            locations.forEach(location => {
+                const locationElement = document.createElement('div');
+                locationElement.className = 'location-card'; // Adding a class for styling purposes
+                locationElement.innerHTML = `
+                    <h3>${location.name}</h3>
+                    <p>Type: ${location.type}</p>
+                    <p>Dimension: ${location.dimension}</p>
+                    <a href="${location.url}" target="_blank">More Info</a>
+                `;
+                container.appendChild(locationElement);
+            });
+        }
+    </script>
+</body>
+</html>
