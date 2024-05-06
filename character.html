@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty Characters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .character-card {
+            width: 250px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .character-image {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .character-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .character-info {
+            margin-top: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <div id="characters"></div>
+    <div class="container" id="characters">
+        <!-- Character cards will be dynamically added here -->
+    </div>
 
     <script>
         fetch('https://rickandmortyapi.com/api/character') 
@@ -19,16 +60,18 @@
         function displayCharacters(characters) {
             const container = document.getElementById('characters');
             characters.results.forEach(character => {
-                const element = document.createElement('div');
-                element.innerHTML = `
-                    <h3>${character.name}</h3>
-                    <p>Status: ${character.status}</p>
-                    <img src="${character.image}" alt="Image of ${character.name}">
-                    <p>Species: ${character.species}</p>
-                    <p>Gender: ${character.gender}</p>
+                const characterCard = document.createElement('div');
+                characterCard.classList.add('character-card');
+                characterCard.innerHTML = `
+                    <h3 class="character-name">${character.name}</h3>
+                    <p class="character-info">Status: ${character.status}</p>
+                    <img class="character-image" src="${character.image}" alt="Image of ${character.name}">
+                    <p class="character-info">Species: ${character.species}</p>
+                    <p class="character-info">Gender: ${character.gender}</p>
                 `;
-                container.appendChild(element);
+                container.appendChild(characterCard);
             });
         }
     </script>
 </body>
+</html>
