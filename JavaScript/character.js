@@ -5,7 +5,8 @@ fetch('https://rickandmortyapi.com/api/character')
   })
   .catch(error => console.error('Error fetching characters:', error));
 
-function displayCharacters(characters) {
+  function displayCharacters(characters) {
+    console.log(characters); // Add this line to log the characters data
     const container = document.getElementById('characters');
     characters.forEach(character => {
         const characterElement = document.createElement('div');
