@@ -1,21 +1,25 @@
-fetch('https://rickandmortyapi.com/api/character') 
+fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())
   .then(data => {
-    displayData(data);
+    displayCharacters(data.results);
   })
-  .catch(error => console.error('Error:', error));
+  .catch(error => console.error('Error fetching characters:', error));
 
-  function displayCharacters(characters) {
+function displayCharacters(characters) {
     const container = document.getElementById('characters');
-    characters.results.forEach(character => {
-        const element = document.createElement('div');
-        element.innerHTML = `
+    characters.forEach(character => {
+        const characterElement = document.createElement('div');
+        characterElement.className = 'character-card'; // Adding a class for styling purposes
+        characterElement.innerHTML = `
             <h3>${character.name}</h3>
+            <img src="${character.image}" alt="${character.name}">
             <p>Status: ${character.status}</p>
-            <img src="${character.image}" alt="Image of ${character.name}">
             <p>Species: ${character.species}</p>
             <p>Gender: ${character.gender}</p>
+            <p>Origin: ${character.origin.name}</p>
+            <p>Location: ${character.location.name}</p>
+            <a href="${character.url}" target="_blank">More Info</a>
         `;
-        container.appendChild(element);
+        container.appendChild(characterElement);
     });
-}html
+}
