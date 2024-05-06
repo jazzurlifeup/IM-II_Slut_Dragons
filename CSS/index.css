@@ -12,7 +12,7 @@ main {
 .banner {
     grid-column: 1 / span 14;
     position: relative;
-    height: 750px;
+    height: 55vw;
 }
 
 .video {
@@ -21,7 +21,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0px;
+    bottom: 0;
     overflow: hidden;
     z-index: -1;
 }
@@ -50,7 +50,7 @@ main {
 }
 
 .characters {
-    padding-top: 150px;
+    padding-top: 10vw;
     grid-column: 2 / span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -63,14 +63,13 @@ main {
 }
 
 .portal1 img {
-
-    width: 350px;
+    width: 27vw;
 }
 
 .character-text {
     grid-column: 7 / span 6;
     color: white;
-    padding-top: 100px;
+    padding-top: 10vw;
 }
 
 .character-text h2 {
@@ -80,7 +79,7 @@ main {
 
 .character-text p {
     font-size: 2vw;
-    padding-top: 20px;
+    padding-top: 3vw;
 }
 
 .character-text a {
@@ -94,7 +93,7 @@ main {
 
 
 .episodes {
-    padding-top: 100px;
+    padding-top: 8vw;
     grid-column: 2 / span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -112,14 +111,14 @@ main {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    width: 350px;
+    width: 25vw;
 }
 
 .episodes-text {
     grid-column: 2 / span 5;
     color: white;
     justify-self: start;
-    padding-top: 100px;
+    padding-top: 10vw;
 }
 
 .episodes-text h2 {
@@ -129,7 +128,7 @@ main {
 
 .episodes-text p {
     font-size: 2vw;
-    padding-top: 20px;
+    padding-top: 3vw;
 }
 
 .episodes-text a {
@@ -143,7 +142,7 @@ main {
 
 
 .locations {
-    padding-top: 100px;
+    padding-top: 8vw;
     grid-column: 2 / span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -157,13 +156,13 @@ main {
 
 .portal3 img {
 
-    width: 350px;
+    width: 25vw;
 }
 
 .locations-text {
     grid-column: 7 / span 6;
     color: white;
-    padding-top: 100px;
+    padding-top: 10vw;
 }
 
 .locations-text h2 {
@@ -173,7 +172,7 @@ main {
 
 .locations-text p {
     font-size: 2vw;
-    padding-top: 20px;
+    padding-top: 3vw;
 }
 
 .locations-text a {
