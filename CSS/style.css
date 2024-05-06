@@ -37,3 +37,80 @@ header img {
   text-decoration: none;
   font-size: 1.7vw;
 }
+
+
+
+
+footer {
+
+  grid-column: 2/ span 12;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat (6, 1fr);
+
+
+  overflow: hidden;
+  padding: 0px 2vw;
+  position: sticky;
+  top: 0;
+  background: #000000f6;
+
+}
+
+.footer_pic {
+  grid-column: 1/ span 3;
+  grid-row: 1/ span 6;
+}
+
+footer img {
+
+  width: 100%;
+  padding: 0vw;
+
+}
+
+
+.footer-right {
+  grid-column: 5/ span 3;
+  grid-row: 2/ span 5;
+  display: flex;
+  width: 35vw;
+  flex-direction: column;
+  align-items: start;
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: start;
+
+}
+
+.logo_footer{
+  grid-column: 5/ span 3;
+  grid-row: 1/ span 1;
+  display: flex;
+  color: white;
+  font-size: 2vw;
+  justify-content: start;
+  padding-top: 60px;
+}
+
+.footer-right a {
+ 
+  color: white;
+  text-decoration: none;
+  font-size: 1.7vw;
+  margin-top: 40px;
+}
+
+.footer-right a:hover {
+  color: rgb(17, 253, 0);
+  text-decoration: underline;
+}
+
+.footer-right p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.7vw;
+}
