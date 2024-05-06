@@ -1,14 +1,16 @@
 fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())
   .then(data => {
+    console.log('Data from API:', data);
     displayCharacters(data.results);
   })
   .catch(error => console.error('Error fetching characters:', error));
 
-  function displayCharacters(characters) {
-    console.log(characters); // Add this line to log the characters data
+function displayCharacters(characters) {
+    console.log('Characters to display:', characters);
     const container = document.getElementById('characters');
     characters.forEach(character => {
+        console.log('Character:', character);
         const characterElement = document.createElement('div');
         characterElement.className = 'character-card'; // Adding a class for styling purposes
         characterElement.innerHTML = `
