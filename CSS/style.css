@@ -86,31 +86,28 @@ footer img {
 
 }
 
+
+
+.footer-right a {
+ 
+  color: rgb(17, 253, 0, 0.7);
+  text-decoration: none;
+  font-size: 1.7vw;
+  margin-top: 25px;
+}
+
+.footer-right a:hover {
+  color: rgba(17, 253, 0);
+
+  text-decoration: underline;
+}
+
+
 .logo_footer{
   grid-column: 5/ span 3;
   grid-row: 1/ span 1;
   display: flex;
-  color: white;
-  font-size: 2vw;
+  width: 20vw;
   justify-content: start;
-  padding-top: 60px;
-}
-
-.footer-right a {
- 
-  color: white;
-  text-decoration: none;
-  font-size: 1.7vw;
-  margin-top: 40px;
-}
-
-.footer-right a:hover {
-  color: rgb(17, 253, 0);
-  text-decoration: underline;
-}
-
-.footer-right p {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 1.7vw;
+  padding-top: 30px;
 }
