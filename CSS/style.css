@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(9, 1, 25);
+  background-image: url(img/Background.png);
+  background-attachment: fixed;
+  width: 100%;
 }
 
 header {

@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty Locations</title>
-    <style>
-        /* Style for location cards */
-        .location-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/location.css">
+  
 </head>
 <body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="CSS/img/logo.png" alt="Logo">
+        </a>
+
+        <div class="header-right">
+            <a href="character.html">Characters</a>
+            <a href="episode.html">Episodes</a>
+            <a href="location.html">Locations</a>
+        </div>
+    </header>
+
+
     <h1>Rick and Morty Locations</h1>
     <div id="locations"></div>
+
+    <footer>
+        <div class="footer_pic">
+            <img src="CSS/img/footerpicture.png" alt="Logo">
+        </div>
+
+        <img src="CSS/img/logo.png" alt="logo" class="logo_footer">
+
+        <div class="footer-right">
+
+            <a href="character.html">Characters</a>
+            <a href="episode.html">Episodes</a>
+            <a href="location.html">Locations</a>
+        </div>
+
+    </footer>
 
     <script>
         fetch('https://rickandmortyapi.com/api/location')

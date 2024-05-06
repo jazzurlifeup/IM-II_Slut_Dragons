@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty Episodes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/episode.css">
 </head>
 <body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="CSS/img/logo.png" alt="Logo">
+        </a>
+
+        <div class="header-right">
+            <a href="character.html">Characters</a>
+            <a href="episode.html">Episodes</a>
+            <a href="location.html">Locations</a>
+        </div>
+    </header>
+
     <div class="container">
         <h1>Rick and Morty Episodes</h1>
         <div id="episodes" class="episode-container">
             <!-- Episodes will be dynamically added here -->
         </div>
     </div>
+
+    <footer>
+        <div class="footer_pic">
+            <img src="CSS/img/footerpicture.png" alt="Logo">
+        </div>
+
+        <img src="CSS/img/logo.png" alt="logo" class="logo_footer">
+
+        <div class="footer-right">
+
+            <a href="character.html">Characters</a>
+            <a href="episode.html">Episodes</a>
+            <a href="location.html">Locations</a>
+        </div>
+
+    </footer>
+
     <script>
         // JavaScript code to fetch and display episodes
         fetch('https://rickandmortyapi.com/api/episode')
