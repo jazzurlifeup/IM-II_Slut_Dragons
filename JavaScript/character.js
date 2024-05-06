@@ -18,4 +18,4 @@ fetch('https://rickandmortyapi.com/api/character')
         `;
         container.appendChild(element);
     });
-}
+}html
