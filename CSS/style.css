@@ -42,6 +42,20 @@ header img {
   color:  #37ff00; }
 
 
+
+  .random_character {
+    padding-top: 100px;
+    grid-column: 4 / span 8;
+    display: flex;
+    justify-content: center;
+}
+
+.random_character h3 {
+    color: white;
+    font-size: 80px;
+    font-family: Bahianita;
+      }
+
 footer {
 
   grid-column: 2/ span 12;
