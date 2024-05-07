@@ -31,21 +31,15 @@ header img {
   padding: 0vw;
 }
 
-.header-right {
-  display: flex;
-  width: 35vw;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
 .header-right a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 1.7vw;
-}
+  font-family: 'Bahianita', sans-serif; 
+  font-size: 40px; 
+  color: #ffffff; 
+  text-decoration: none; }
 
-
+.header-right a:hover 
+{
+  color:  #37ff00; }
 
 
 footer {
@@ -93,20 +87,21 @@ footer img {
 
 }
 
-
-
 .footer-right a {
  
   color: rgb(17, 253, 0, 0.7);
   text-decoration: none;
   font-size: 1.7vw;
   margin-top: 25px;
+  font-family: 'Bahianita', sans-serif; 
+  font-size: 35px; 
+  color: #ffffff; 
+  text-decoration: none;
 }
 
 .footer-right a:hover {
   color: rgba(17, 253, 0);
 
-  text-decoration: underline;
 }
 
 
