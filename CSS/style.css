@@ -35,15 +35,15 @@ header img {
 
 
 .header-right a {
-  font-family: 'Bahianita', sans-serif;
-  font-size: 2vw;
-  color: #ffffff;
+  font-family: 'Futura', sans-serif;
+  font-size: 1.9vw;
+  color: rgb(47, 255, 172);
   text-decoration: none;
   margin:2vw
 }
 
 .header-right a:hover {
-  color: #37ff00;
+  color: #ff46d7;
 }
 
 
@@ -101,7 +101,7 @@ footer img {
   text-decoration: none;
   font-size: 1.7vw;
   margin-top: 25px;
-  font-family: 'Bahianita', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: 35px;
   color: #ffffff;
   text-decoration: none;

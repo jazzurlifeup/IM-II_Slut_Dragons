@@ -109,7 +109,7 @@ function displayCharacters(characters) {
       <h3>${character.name}</h3>
       <img src="${character.image}" alt="${character.name}">
 
-      <button onclick="showModal('${character.id}')">More Info</button>
+      <button onclick="showModal('${character.id}')">Show it to me <br> please Rachel <br> PLEASE </button>
     `;
     container.appendChild(characterElement);
   });

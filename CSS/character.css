@@ -4,26 +4,20 @@ body {
     padding: 0;
 }
 
-.filters {
-    display: flex;
-    justify-content: space-around;
-    margin: 2vw;
-    padding: 1vw;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+.character-card button {
+    background-color: rgb(255, 0, 208);
+    margin-top: 1.6vw;
+    width: 14vw;
+    padding: 1vw 2vw;
+    align-self: center;
+    color: white;
+    border: none;
+    box-shadow: 0.2vw 0.2vw #1a602099;
+    border-radius: 30px;
 }
-
-.filters input, .filters select {
-    padding: 0.5em;
-    margin: 0 0.5em;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-
-
 
 
 
@@ -35,12 +29,16 @@ body {
 }
 
 .character-card {
+    display: flex;
+    flex-direction: column;
     width: 20vw;
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(137, 119, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     margin: 2vw;
     padding: 2vw;
-    box-shadow: 0 4px 6px rgba(1, 255, 5, 0.466);
+    box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
 .character-card img {
@@ -51,12 +49,10 @@ body {
 .character-card h3 {
     margin-top: 10px;
     font-weight: bold;
-}
-
-.character-card p {
-    margin-top: 5px;
-    color: #666;
-    font-size: 14px;
+    text-align: center;
+    font-family: "futura";
+    color: rgb(47, 255, 172);
+    font-size: 2vw;
 }
 
 
@@ -64,39 +60,148 @@ body {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
+}
+
+
+
+
+
+.searchbyname {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 4vw
+}
+
+.searchbyname input[type="text"] {
+    width: 40vw;
+    padding: 10px;
+    padding-left: 2vw;
+    font-size: 1.5vw;
+    border: 1px solid #ccc;
+    background-color: rgb(239, 227, 255);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* Optional: Style placeholder text */
+.searchbyname input[type="text"]::placeholder {
+    color: #999;
+    /* Adjust placeholder color as needed */
+}
+
+/* Optional: Style when the input field is focused */
+.searchbyname input[type="text"]:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+
+
+
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+
+/* Style for the dropdown selects */
+.filters select {
+    padding: 15px;
+    padding-left: 2vw;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: rgb(239, 227, 255);
+    font-size: 16px;
+    color: #333;
+    width: 25vw;
+}
+
+/* Style for the dropdown options */
+.filters option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style for the dropdown hover effect */
+.filters select:hover {
+    background-color: #c7c7c7;
+}
+
+/* Style for the dropdown focus effect */
+.filters select:focus {
+    outline: none;
+    border-color: #09ff00;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.modal {
+    width: 100%;
+    font-family: futura;
+    color: #09ff00;
+    display: flex;
+    flex-direction: row;
+}

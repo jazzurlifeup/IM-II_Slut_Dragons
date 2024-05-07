@@ -53,10 +53,9 @@ main {
 
 .title-overlay h1 {
     font-family: "rickmortytitle";
-    color: aqua;
+    color: #23c7c1;
     font-size: 15vw;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: 0.3vw;
+
 
    
 }
@@ -168,7 +167,7 @@ main {
 
 .character-text {
     grid-column: 7 / span 6;
-    font-family: Bahianita;
+    font-family: "futura";
     color: white;
     padding-top: 10vw;
 }
@@ -261,7 +260,7 @@ main {
 
 .episodes-text {
     grid-column: 2 / span 5;
-    font-family: Bahianita;
+    font-family: "futura";
     color: white;
     justify-self: start;
     padding-top: 10vw;
@@ -376,7 +375,7 @@ main {
 
 .locations-text {
     grid-column: 7 / span 6;
-    font-family: Bahianita;
+    font-family: "Futura";
     color: white;
     padding-top: 10vw;
 }
@@ -414,7 +413,7 @@ main {
 .random_button {
     background-color: greenyellow; 
     color: #ffffff; 
-    font-family: Bahianita;
+    font-family: "Futura";
     border: none; 
     border-radius: 5px; 
     padding: 10px 20px; 
@@ -437,24 +436,24 @@ main {
 .button_html {
     padding: 1vw 2.5vw;
     font-size: 1.8vw;
-    font-family: Bahianita;
+    font-family: "Futura";
     color: #081f0a;
     text-align: center;
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: yellowgreen;
+    background-color: rgb(47, 255, 172);
     border-radius: 30px;
     box-shadow: 0 0.4vw #1a602099;
     
 }
 
 .button_html:hover {
-    background-color: #199f24;
+    background-color: rgb(23, 154, 102);
 }
 
 .button_html:active{
-    background-color: #199f24;
+    background-color: rgb(23, 154, 102);
     box-shadow: 0 0.2vw #1a602099;
     transform: translateY(0.4vw);
 }
@@ -516,5 +515,5 @@ main {
   .random_character h3 {
     color: white;
     font-size: 3vw;
-    font-family: "Bahianita";
+    font-family: "Futura";
   }
