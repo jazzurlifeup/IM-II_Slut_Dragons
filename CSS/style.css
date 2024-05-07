@@ -11,6 +11,7 @@ body {
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   overflow: hidden;
   padding: 0px 2vw;
@@ -20,6 +21,7 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 header img {
@@ -31,30 +33,22 @@ header img {
   padding: 0vw;
 }
 
+
 .header-right a {
-  font-family: 'Bahianita', sans-serif; 
-  font-size: 40px; 
-  color: #ffffff; 
-  text-decoration: none; }
-
-.header-right a:hover 
-{
-  color:  #37ff00; }
-
-
-
-  .random_character {
-    padding-top: 100px;
-    grid-column: 4 / span 8;
-    display: flex;
-    justify-content: center;
+  font-family: 'Bahianita', sans-serif;
+  font-size: 2vw;
+  color: #ffffff;
+  text-decoration: none;
+  margin:2vw
 }
 
-.random_character h3 {
-    color: white;
-    font-size: 80px;
-    font-family: Bahianita;
-      }
+.header-right a:hover {
+  color: #37ff00;
+}
+
+
+
+
 
 footer {
 
@@ -102,14 +96,14 @@ footer img {
 }
 
 .footer-right a {
- 
+
   color: rgb(17, 253, 0, 0.7);
   text-decoration: none;
   font-size: 1.7vw;
   margin-top: 25px;
-  font-family: 'Bahianita', sans-serif; 
-  font-size: 35px; 
-  color: #ffffff; 
+  font-family: 'Bahianita', sans-serif;
+  font-size: 35px;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -119,7 +113,7 @@ footer img {
 }
 
 
-.logo_footer{
+.logo_footer {
   grid-column: 5/ span 3;
   grid-row: 1/ span 1;
   display: flex;
