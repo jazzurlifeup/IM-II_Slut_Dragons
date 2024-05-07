@@ -168,6 +168,7 @@ main {
 
 .character-text {
     grid-column: 7 / span 6;
+    font-family: Bahianita;
     color: white;
     padding-top: 10vw;
 }
@@ -260,6 +261,7 @@ main {
 
 .episodes-text {
     grid-column: 2 / span 5;
+    font-family: Bahianita;
     color: white;
     justify-self: start;
     padding-top: 10vw;
@@ -374,6 +376,7 @@ main {
 
 .locations-text {
     grid-column: 7 / span 6;
+    font-family: Bahianita;
     color: white;
     padding-top: 10vw;
 }
@@ -411,6 +414,7 @@ main {
 .button_html {
     padding: 1vw 2.5vw;
     font-size: 1.4vw;
+    font-family: Bahianita;
     color: #081f0a;
     text-align: center;
     cursor: pointer;
