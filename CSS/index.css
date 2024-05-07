@@ -180,7 +180,7 @@ main {
 
 .character-text p {
     font-size: 2vw;
-    padding-top: 3vw;
+   
 }
 
 .character-text a {
@@ -274,7 +274,7 @@ main {
 
 .episodes-text p {
     font-size: 2vw;
-    padding-top: 3vw;
+   
 }
 
 .episodes-text a {
@@ -388,7 +388,7 @@ main {
 
 .locations-text p {
     font-size: 2vw;
-    padding-top: 3vw;
+
 }
 
 .locations-text a {
@@ -411,9 +411,32 @@ main {
 }
 
 
+.random_button {
+    background-color: greenyellow; 
+    color: #ffffff; 
+    font-family: Bahianita;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    box-shadow: 0 0.4vw #1a602099;
+}
+
+
+.random_button:hover {
+    background-color: #199f24;
+}
+
+.random_button:active{
+    background-color: #199f24;
+    box-shadow: 0 0.2vw #1a602099;
+    transform: translateY(0.4vw);
+}
+
 .button_html {
     padding: 1vw 2.5vw;
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     font-family: Bahianita;
     color: #081f0a;
     text-align: center;

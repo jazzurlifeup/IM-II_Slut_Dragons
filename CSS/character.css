@@ -13,7 +13,7 @@ body {
 
 .character-card {
     width: 20vw;
-    background-color: #d0d0d0;
+    background-color: rgb(208, 208, 208);
     border-radius: 10px;
     margin: 2vw;
     padding: 2vw;
