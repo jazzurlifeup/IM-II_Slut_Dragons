@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Rickmortytitle";
+    src: url(fonts/get_schwifty.ttf);
+  }
+
 body {
     background-image: url(img/Background.png);
     background-attachment: fixed;
@@ -37,17 +42,39 @@ main {
 
 .title-overlay {
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 50%;
+    left: 54%;
     transform: translate(-50%, -50%);
     align-self: center;
     z-index: 1;
-    color: #37ff00;
+
 }
 
-.title-overlay img {
-    width: 70vw;
+.title-overlay h1 {
+    font-family: "rickmortytitle";
+    color: aqua;
+    font-size: 15vw;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 0.1vw;
+
+   
 }
+
+.title-overlay h1:hover {
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+    }
+  }
 
 
 
