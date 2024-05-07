@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/character.css">
 </head>
+
 <body>
 
     <header>
@@ -21,7 +23,45 @@
         </div>
     </header>
 
-    
+
+    <div class="filters">
+        <input type="text" id="search-bar" placeholder="Search by name">
+
+        <select id="species-dropdown">
+            <option value="">All Species</option>
+        </select>
+
+        <select id="status-dropdown">
+            <option value="">All Status</option>
+        </select>
+
+        <select id="gender-dropdown">
+            <option value="">All Genders</option>
+          
+        </select>
+
+    </div>
+
+
+    <!-- Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-name"></h2>
+      <img id="modal-image" src="" alt="Character Image">
+      <p id="modal-status"></p>
+      <p id="modal-species"></p>
+      <p id="modal-gender"></p>
+      <p id="modal-origin"></p>
+      <p id="modal-location"></p>
+    </div>
+  </div>
+  
+
+
+
+
     <div class="container" id="characters">
         <!-- Character cards will be dynamically added here -->
     </div>
@@ -45,4 +85,5 @@
     <script src="JavaScript/script.js"></script>
     <script src="JavaScript/character.js"></script>
 </body>
+
 </html>
