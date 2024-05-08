@@ -19,7 +19,7 @@ body{
     
 }
 
-.episode-title h1:hover {
+.episode-title h1 {
     -webkit-animation: glow 3s ease-in-out infinite alternate;
     -moz-animation: glow 3s ease-in-out infinite alternate;
     animation: glow 3s ease-in-out infinite alternate;

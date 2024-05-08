@@ -22,7 +22,7 @@ body {
     
 }
 
-.character-title h1:hover {
+.character-title h1 {
     -webkit-animation: glow 3s ease-in-out infinite alternate;
     -moz-animation: glow 3s ease-in-out infinite alternate;
     animation: glow 3s ease-in-out infinite alternate;
