@@ -7,6 +7,38 @@ body {
 
 
 
+.character-title {
+    font-family: 'Rickmortytitle', sans-serif; 
+    text-align: center; 
+    margin: 50px 0; 
+    padding: 50px ;
+    color: #333; 
+}
+
+.character-title h1 {
+    font-family: 'Rickmortytitle', sans-serif;
+    font-size: 10vw; 
+    margin: 0; 
+    color: #23c7c1; 
+    
+}
+
+.character-title h1:hover {
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+    }
+  }
+
+
 .character-card button {
     background-color: rgb(255, 0, 208);
     margin-top: 1.6vw;
