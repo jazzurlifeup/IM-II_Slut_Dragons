@@ -48,26 +48,7 @@
 
     </footer>
 
-    <script>
-        // JavaScript code to fetch and display episodes
-        fetch('https://rickandmortyapi.com/api/episode')
-            .then(response => response.json())
-            .then(data => {
-                const episodesContainer = document.getElementById('episodes');
-                data.results.forEach(episode => {
-                    const episodeElement = document.createElement('div');
-                    episodeElement.classList.add('episode');
-                    episodeElement.innerHTML = `
-                        <h2>${episode.name}</h2>
-                        <p>Episode: ${episode.episode}</p>
-                        <p>Air Date: ${episode.air_date}</p>
-                    `;
-                    episodesContainer.appendChild(episodeElement);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching episodes:', error);
-            });
-    </script>
+    <script src="JavaScript/episode.js"></script>
+    
 </body>
 </html>
