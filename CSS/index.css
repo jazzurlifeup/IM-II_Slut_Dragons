@@ -370,7 +370,6 @@ main {
 }
 
 
-
 .portal3:hover {
     animation: zitternicht 0.5s;
     animation-iteration-count: infinite;
@@ -538,12 +537,13 @@ main {
     margin-bottom: 3vw;
 }
 
-#characterDisplay h2{
+#characterDisplay h2 {
     padding: 0.5vw 1vw;
     background: #8e8e8e1a;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    font-size: 2vw;
 }
 
 #characterImage {
@@ -551,11 +551,116 @@ main {
     width: 20vw;
     height: auto;
     border: 0.3vw solid greenyellow;
-   
+
 }
 
 #characterImage,
 #characterName {
     display: none;
     /* Hide elements initially */
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .character-text h2 {
+        font-size: 8vw;
+    }
+
+    .character-text p {
+        font-size: 3vw;
+    }
+
+    .episodes-text h2 {
+        font-size: 8vw;
+    }
+
+    .episodes-text p {
+        font-size: 3vw;
+    }
+
+    .locations-text h2 {
+        font-size: 8vw;
+    }
+
+    .locations-text p {
+        font-size: 3vw;
+    }
+
+    .button_html {
+        font-size: 3vw;
+    }
+
+    .random_character h3 {
+        font-size: 4vw;
+    }
+
+    #fetchCharacter {
+        width: 35vw;
+        font-size: 3vw;
+    }
+
+    #characterDisplay h2 {
+        font-size: 3.5vw;
+    }
+
+    #characterImage {
+        width: 35vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .character-text h2 {
+        font-size: 8.3vw;
+
+    }
+
+    .character-text p {
+        font-size: 3.3vw;
+
+    }
+
+    .episodes-text h2 {
+        font-size: 8.3vw;
+
+    }
+
+    .episodes-text p {
+        font-size: 3.3vw;
+
+    }
+
+    .locations-text h2 {
+        font-size: 8.3vw;
+    }
+
+    .locations-text p {
+        font-size: 3.3vw;
+    }
+
+    .button_html {
+        font-size: 3.3vw;
+    }
+
+    .random_character h3 {
+        font-size: 4vw;
+    }
+
+    #fetchCharacter {
+        width: 35vw;
+        font-size: 3.3vw;
+    }
+
+    #characterDisplay h2 {
+        font-size: 3.6vw;
+    }
+
+    #characterImage {
+        width: 40vw;
+    }
+
 }
