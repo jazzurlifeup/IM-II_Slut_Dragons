@@ -1,0 +1,66 @@
+
+
+.about-title { 
+    font-family: 'Rickmortytitle', sans-serif; 
+    text-align: center; 
+    margin: 50px 0; 
+    padding-top: 50px ;
+    color: #333; 
+}
+
+.about-title h1 {
+    font-family: 'Rickmortytitle', sans-serif;
+    font-size: 10vw; 
+    margin: 0; 
+    color: #23c7c1; 
+    
+}
+
+.about-title h1 {
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+    }
+  }
+
+
+  .hello {
+    grid-column: 7 / span 6;
+    font-family: "futura";
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.hello h2 {
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
+
+.hello p {
+    font-size: 2vw;
+   
+
+}
+
+
+
+
+
