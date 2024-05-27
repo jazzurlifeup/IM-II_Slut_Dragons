@@ -50,6 +50,16 @@ body {
     border-radius: 30px;
 }
 
+.character-card button:hover {
+    background-color: rgb(144, 18, 121);
+}
+
+.character-card button:active {
+    background-color: rgb(144, 18, 121);
+    box-shadow: 0 0.2vw #1a602000;
+    transform: translateY(0.4vw);
+}
+
 
 
 .container {
@@ -89,46 +99,6 @@ body {
 
 
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-
-    font-family: "futura";
-    color: #09ff00;
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 
@@ -222,4 +192,77 @@ body {
     box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
 
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+
+    font-family: "futura";
+    color: rgb(47, 255, 172);
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: rgb(59, 28, 80);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 0.5vw solid greenyellow;
+    width: 35%; /* Could be more or less, depending on screen size */
+    display: flex; /* Enables flexbox properties */
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
+}
+
+.modal-body {
+    display: flex;
+    width: 100%; /* Full width of the modal content */
+}
+
+.modal-image-container {
+    flex: 1; /* Takes 1/2 of the space */
+    padding: 10px; /* Padding around the image */
+}
+
+.modal-info-container {
+    flex: 1; /* Takes 1/2 of the space */
+    padding: 10px; /* Padding around the text */
+    display: flex;
+    flex-direction: column; /* Stack the info vertically */
+    justify-content: center; /* Center align the info vertically */
+}
+
+.modal-info-container h2, .modal-info-container p {
+    margin: 10px 0; /* Margin for spacing between items */
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    color: #aaa;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
 

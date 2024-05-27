@@ -24,15 +24,15 @@
         </div>
     </header>
 
-    <div class= "character-title">
-            <h1> Characters</h1>
-    </div> 
+    <div class="character-title">
+        <h1> Characters</h1>
+    </div>
 
 
     <div class="searchbyname">
         <input type="text" id="search-bar" placeholder="Stalk a Character">
     </div>
-    
+
 
     <div class="filters">
 
@@ -56,15 +56,22 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2 id="modal-name"></h2>
-            <img id="modal-image" src="" alt="Character Image">
-            <p id="modal-status"></p>
-            <p id="modal-species"></p>
-            <p id="modal-gender"></p>
-            <p id="modal-origin"></p>
-            <p id="modal-location"></p>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="Character Image">
+                </div>
+                <div class="modal-info-container">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-status"></p>
+                    <p id="modal-species"></p>
+                    <p id="modal-gender"></p>
+                    <p id="modal-origin"></p>
+                    <p id="modal-location"></p>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
     <div class="container" id="characters">
