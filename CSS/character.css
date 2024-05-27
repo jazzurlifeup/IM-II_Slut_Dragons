@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,19 +6,19 @@ body {
 
 
 .character-title {
-    font-family: 'Rickmortytitle', sans-serif; 
-    text-align: center; 
-    margin: 50px 0; 
-    padding: 50px ;
-    color: #333; 
+    font-family: 'Rickmortytitle', sans-serif;
+    text-align: center;
+    margin: 50px 0;
+    padding: 50px;
+    color: #333;
 }
 
 .character-title h1 {
     font-family: 'Rickmortytitle', sans-serif;
-    font-size: 10vw; 
-    margin: 0; 
-    color: #23c7c1; 
-    
+    font-size: 10vw;
+    margin: 0;
+    color: #23c7c1;
+
 }
 
 .character-title h1 {
@@ -30,12 +29,13 @@ body {
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
     }
+
     to {
-      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+        text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
     }
-  }
+}
 
 
 .character-card button {
@@ -48,6 +48,8 @@ body {
     border: none;
     box-shadow: 0.2vw 0.2vw #1a602099;
     border-radius: 30px;
+    font-family: "futura";
+    font-size: 2vw;
 }
 
 .character-card button:hover {
@@ -72,7 +74,7 @@ body {
 .character-card {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    flex: 1 1 200px;
     background-color: rgb(137, 119, 255, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -176,7 +178,7 @@ body {
 
 /* Style for the dropdown options */
 .filters option {
-    background-color: #fff;
+    background-color: #26ef13;
     color: #333;
 }
 
@@ -196,16 +198,24 @@ body {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
 
     font-family: "futura";
     color: rgb(47, 255, 172);
@@ -216,36 +226,62 @@ body {
 .modal-content {
     position: relative;
     background-color: rgb(59, 28, 80);
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 0.5vw solid greenyellow;
-    width: 35%; /* Could be more or less, depending on screen size */
-    display: flex; /* Enables flexbox properties */
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+    display: flex;
+    /* Enables flexbox properties */
     flex-direction: column;
-    align-items: center; /* Center align the content */
+    align-items: center;
+    /* Center align the content */
     box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
 .modal-body {
     display: flex;
-    width: 100%; /* Full width of the modal content */
+    width: 100%;
+    /* Full width of the modal content */
 }
 
 .modal-image-container {
-    flex: 1; /* Takes 1/2 of the space */
-    padding: 10px; /* Padding around the image */
+    max-width: 100%;
+    /* Ensures the image is never wider than its container */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border-radius: 5px;
+
+}
+
+.modal-image-container img {
+    width: 27vw;
 }
 
 .modal-info-container {
-    flex: 1; /* Takes 1/2 of the space */
-    padding: 10px; /* Padding around the text */
+    flex: 1;
+    /* Takes 1/2 of the space */
+    padding: 10px;
+    /* Padding around the text */
     display: flex;
-    flex-direction: column; /* Stack the info vertically */
-    justify-content: center; /* Center align the info vertically */
+    flex-direction: column;
+    /* Stack the info vertically */
+    justify-content: center;
+    /* Center align the info vertically */
 }
 
-.modal-info-container h2, .modal-info-container p {
-    margin: 10px 0; /* Margin for spacing between items */
+
+.modal-info-container h2 {
+    font-size: 3vw;
+    margin: 0.8vw 0;
+
+}
+
+
+.modal-info-container p {
+    font-size: 1.5vw;
+    margin: 0.8vw 0;
 }
 
 /* The Close Button */
@@ -254,15 +290,119 @@ body {
     top: 1vw;
     right: 1vw;
     color: #aaa;
-    font-size: 2vw;
+    font-size: 5vw;
     font-weight: bold;
     cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-    color:greenyellow;
+    color: greenyellow;
     text-decoration: none;
     cursor: pointer;
 }
 
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .searchbyname input[type="text"] {
+        width: 60vw;
+        font-size: 3.3vw;
+    }
+
+    .filters {
+        margin: 2vw;
+        padding: 1vw;
+    }
+
+    .filters input,
+    .filters select {
+        padding: 0.5em;
+        margin: 0 0.2em;
+        font-size: 3.3vw;
+    }
+
+    .character-card button {
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+
+    .character-card h3 {
+        font-size: 3vw;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+
+    .modal-info-container h2 {
+        font-size: 4.5vw;
+        margin: 1.2vw 0;
+
+    }
+
+
+    .modal-info-container p {
+        font-size: 2.2vw;
+        margin: 1vw 0;
+    }
+
+    .modal-image-container img {
+        width: 35vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .searchbyname input[type="text"] {
+        width: 90vw;
+        font-size: 4.3vw;
+    }
+
+    .filters {
+        margin: 1vw;
+        padding: 1vw;
+    }
+
+    .filters input,
+    .filters select {
+        padding: 0.5em;
+        margin: 0 0.2em;
+        font-size: 3.5vw;
+    }
+
+    .character-card button {
+        width: 40vw;
+        font-size: 5vw;
+    }
+
+    .character-card h3 {
+        font-size: 4.9vw;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-info-container h2 {
+        font-size: 6vw;
+        margin: 1.5vw 0;
+
+    }
+
+    .modal-info-container p {
+        font-size: 3vw;
+        margin: 1.1vw 0;
+    }
+
+    .modal-image-container img {
+        width: 45vw;
+    }
+    .close {
+        font-size: 7vw;
+    }
+
+}
