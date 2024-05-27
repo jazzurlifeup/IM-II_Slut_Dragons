@@ -72,38 +72,31 @@ body {
 
 #container {
   width: 90%;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 1vw auto;
+  padding: 1vw;
   background-color: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Adds subtle shadow for depth */
 }
 
-/* Grid layout for episodes */
+/* Grid layout for location */
 .location-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   /* Creates a responsive grid */
-  gap: 20px;
-  /* Space between episodes */
-  padding: 0;
+
 }
 
-/* Styling for each episode block */
+/* Styling for each location block */
 .location {
   background-color: rgb(137, 119, 255, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-  margin: 2vw;
-  padding: 2vw;
+  margin: 1.7vw;
+  padding: 1vw 1.5vw;
   box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
-}
-
-.location h2 {
-  color: #ffffff;
-}
-
-.location p {
-  color: #ffffff;
+  font-family: "futura";
+  font-size: 0.8vw;
+  color: white;
 }
