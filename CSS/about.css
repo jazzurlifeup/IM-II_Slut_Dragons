@@ -51,16 +51,64 @@
     align-items: center;
     text-align: center;
     padding: 50px;
-    margin: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .hello p {
     font-size: 2vw;
-   
 
 }
 
+.team {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Define a 12-column grid */
+    gap: 16px; /* Define gaps between the grid items */
+}
 
+.team .pictures{
+    /* Define styles for pictures if needed */
+}
+
+
+.Stef { 
+    font-size: 2vw;
+    grid-column: 2 / span 2;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-family: "futura";
+}
+
+.Jazz {
+    font-size: 2vw;
+    grid-column: 6 / span 2;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-family: "futura";
+}
+
+.Marie { 
+    font-size: 2vw;
+    grid-column: 10 / span 2;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-family: "futura";
+}
 
 
 
