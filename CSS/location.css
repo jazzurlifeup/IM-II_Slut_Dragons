@@ -98,7 +98,7 @@ body {
   box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
   font-family: "futura";
   font-size: 0.8vw;
-  color: white;
+  color: rgb(47, 255, 172);
 }
 
 .modal {
@@ -117,7 +117,6 @@ body {
 .modal-content {
   position: relative;
   background-color: rgb(59, 28, 80);
-  color: black;
   font-family: "futura";
   color: rgb(47, 255, 172);
   margin: 10% auto;

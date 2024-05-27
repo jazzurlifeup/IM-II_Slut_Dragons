@@ -3,40 +3,69 @@ document.addEventListener('DOMContentLoaded', () => {
     const episodesContainer = document.getElementById('episodes');
     let allEpisodes = [];
 
-    // Function to display episodes
+    async function fetchCharacters(urls) {
+        const responses = await Promise.all(urls.map(url => fetch(url)));
+        const data = await Promise.all(responses.map(res => res.json()));
+        return data;
+    }
+
     function displayEpisodes(episodes) {
-        episodesContainer.innerHTML = ''; // Clear previous episodes
+        episodesContainer.innerHTML = '';
         episodes.forEach(episode => {
             const episodeElement = document.createElement('div');
-            episodeElement.className = 'episode'; // Ensure this matches your CSS class for styling
+            episodeElement.className = 'episode';
             episodeElement.innerHTML = `
-              <h2>${episode.name}</h2>
-              <p>Episode: ${episode.episode}</p>
-              <p>Air Date: ${episode.air_date}</p>
-              <a href="${episode.url}" target="_blank">More Info</a>
-          `;
+                <h2>${episode.name}</h2>
+                <p>Episode: ${episode.episode}</p>
+                <p>Air Date: ${episode.air_date}</p>
+                <button onclick="showCharactersModal('${episode.characters}', '${episode.name}')">Episode Characters</button>
+            `;
             episodesContainer.appendChild(episodeElement);
         });
     }
 
-    // Function to filter episodes based on search text
-    function filterEpisodes() {
-        const searchText = searchBar.value.toLowerCase();
-        const filteredEpisodes = allEpisodes.filter(episode =>
-            episode.name.toLowerCase().includes(searchText)
-        );
-        displayEpisodes(filteredEpisodes);
-    }
+    window.showCharactersModal = async (characterUrls, episodeName) => {
+        const modal = document.getElementById('charactersModal');
+        const charactersList = document.getElementById('charactersList');
+        charactersList.innerHTML = '<p>Loading characters...</p>';
 
-    // Function to fetch all episodes by paging through the API
+        const characters = await fetchCharacters(characterUrls.split(','));
+
+        document.getElementById('episodeTitle').textContent = `${episodeName} Characters`;
+        charactersList.innerHTML = '';
+
+        characters.forEach(character => {
+            const characterElement = document.createElement('div');
+            characterElement.textContent = character.name;
+            charactersList.appendChild(characterElement);
+        });
+
+        if (!characters.length) {
+            charactersList.innerHTML = '<p>No characters found.</p>';
+        }
+
+        modal.style.display = 'block';
+    };
+
+    // Close the modal logic
+    document.getElementsByClassName('close')[0].onclick = function () {
+        document.getElementById('charactersModal').style.display = 'none';
+    };
+
+    window.onclick = function (event) {
+        const modal = document.getElementById('charactersModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+
     async function fetchAllEpisodes(url = 'https://rickandmortyapi.com/api/episode') {
         try {
             const response = await fetch(url);
             const data = await response.json();
             allEpisodes = [...allEpisodes, ...data.results];
-
-            if (data.info && data.info.next) {
-                await fetchAllEpisodes(data.info.next); // Fetch the next page recursively
+            if (data.info.next) {
+                await fetchAllEpisodes(data.info.next);
             } else {
                 displayEpisodes(allEpisodes);
             }
@@ -45,9 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Setup filter on user input
-    searchBar.addEventListener('input', filterEpisodes);
+    searchBar.addEventListener('input', () => {
+        const searchText = searchBar.value.toLowerCase();
+        const filteredEpisodes = allEpisodes.filter(episode =>
+            episode.name.toLowerCase().includes(searchText)
+        );
+        displayEpisodes(filteredEpisodes);
+    });
 
-    // Fetch all episodes initially
     fetchAllEpisodes();
 });
