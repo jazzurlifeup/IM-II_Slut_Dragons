@@ -261,7 +261,7 @@ body {
 
 .close:hover,
 .close:focus {
-    color: rgb(255, 0, 0);
+    color:greenyellow;
     text-decoration: none;
     cursor: pointer;
 }
