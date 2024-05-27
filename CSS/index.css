@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Rickmortytitle";
     src: url(fonts/get_schwifty.ttf);
-  }
+}
 
 body {
     background-image: url(img/Background.png);
@@ -59,7 +59,7 @@ main {
     font-size: 15vw;
 
 
-   
+
 }
 
 .title-overlay h1 {
@@ -70,12 +70,13 @@ main {
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
     }
+
     to {
-      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+        text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
     }
-  }
+}
 
 
 
@@ -127,7 +128,7 @@ main {
     top: 15vw;
     width: 6vw;
     animation: circletwo 7s linear infinite;
-  
+
 }
 
 
@@ -181,7 +182,7 @@ main {
 
 .character-text p {
     font-size: 2vw;
-   
+
 }
 
 .character-text a {
@@ -275,7 +276,7 @@ main {
 
 .episodes-text p {
     font-size: 2vw;
-   
+
 }
 
 .episodes-text a {
@@ -412,28 +413,7 @@ main {
 }
 
 
-.random_button {
-    background-color: greenyellow; 
-    color: #ffffff; 
-    font-family: "Futura";
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    box-shadow: 0 0.4vw #1a602099;
-}
 
-
-.random_button:hover {
-    background-color: #199f24;
-}
-
-.random_button:active{
-    background-color: #199f24;
-    box-shadow: 0 0.2vw #1a602099;
-    transform: translateY(0.4vw);
-}
 
 .button_html {
     padding: 1vw 2.5vw;
@@ -447,14 +427,14 @@ main {
     background-color: rgb(47, 255, 172);
     border-radius: 30px;
     box-shadow: 0 0.4vw #1a602099;
-    
+
 }
 
 .button_html:hover {
     background-color: rgb(23, 154, 102);
 }
 
-.button_html:active{
+.button_html:active {
     background-color: rgb(23, 154, 102);
     box-shadow: 0 0.2vw #1a602099;
     transform: translateY(0.4vw);
@@ -512,10 +492,70 @@ main {
     grid-column: 4 / span 8;
     display: flex;
     justify-content: center;
-  }
-  
-  .random_character h3 {
+    flex-direction: column;
+}
+
+.random_character h3 {
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: "Futura";
-  }
+    text-align: center;
+}
+
+#fetchCharacter {
+    width: 25vw;
+    align-self: center;
+    padding: 1vw 2.5vw;
+    font-size: 1.8vw;
+    font-family: "Futura";
+    color: #081f0a;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgb(47, 255, 172);
+    border-radius: 30px;
+    box-shadow: 0 0.4vw #1a602099;
+}
+
+#fetchCharacter:hover {
+    background-color: rgb(23, 154, 102);
+}
+
+#fetchCharacter:active {
+    background-color: rgb(23, 154, 102);
+    box-shadow: 0 0.2vw #1a602099;
+    transform: translateY(0.4vw);
+}
+
+#characterDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: greenyellow;
+    font-family: "Futura";
+    margin-bottom: 3vw;
+}
+
+#characterDisplay h2{
+    padding: 0.5vw 1vw;
+    background: #8e8e8e1a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#characterImage {
+    margin-top: 2vw;
+    width: 20vw;
+    height: auto;
+    border: 0.3vw solid greenyellow;
+   
+}
+
+#characterImage,
+#characterName {
+    display: none;
+    /* Hide elements initially */
+}

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty Locations</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/location.css">
-  
+
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo">
@@ -22,12 +24,25 @@
         </div>
     </header>
 
-    <div class= "location-title">
+    <div class="location-title">
         <h1> Locations</h1>
-</div> 
+    </div>
 
 
-    <div id="locations"></div>
+    <div class="searchbyname">
+        <input type="text" id="search-bar" placeholder="Look up Locations">
+    </div>
+
+    <div id="container">
+        <div id="locations" class="location-container">
+        </div>
+    </div>
+
+
+
+
+
+
 
     <footer>
         <div class="footer_pic">
@@ -46,28 +61,7 @@
 
     </footer>
 
-    <script>
-        fetch('https://rickandmortyapi.com/api/location')
-          .then(response => response.json())
-          .then(data => {
-            displayLocations(data.results);
-          })
-          .catch(error => console.error('Error fetching locations:', error));
-        
-        function displayLocations(locations) {
-            const container = document.getElementById('locations');
-            locations.forEach(location => {
-                const locationElement = document.createElement('div');
-                locationElement.className = 'location-card'; // Adding a class for styling purposes
-                locationElement.innerHTML = `
-                    <h3>${location.name}</h3>
-                    <p>Type: ${location.type}</p>
-                    <p>Dimension: ${location.dimension}</p>
-                    <a href="${location.url}" target="_blank">More Info</a>
-                `;
-                container.appendChild(locationElement);
-            });
-        }
-    </script>
+    <script src="JavaScript/location.js"></script>
 </body>
+
 </html>
