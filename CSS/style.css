@@ -39,7 +39,7 @@ header img {
   font-size: 1.9vw;
   color: rgb(47, 255, 172);
   text-decoration: none;
-  margin:2vw
+  margin: 2vw
 }
 
 .header-right a:hover {
@@ -97,14 +97,13 @@ footer img {
 
 .footer-right a {
 
-  color: rgb(17, 253, 0, 0.7);
+
   text-decoration: none;
-  font-size: 1.7vw;
-  margin-top: 25px;
+  font-size: 2.5vw;
   font-family: 'Futura', sans-serif;
-  font-size: 35px;
   color: #ffffff;
   text-decoration: none;
+  margin-bottom: 2vw;
 }
 
 .footer-right a:hover {
@@ -120,4 +119,61 @@ footer img {
   width: 20vw;
   justify-content: start;
   padding-top: 30px;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  header img {
+    width: 20vw;
+  }
+
+  .header-right a {
+    font-size: 2.5vw;
+    margin: 2vw
+  }
+
+  footer img {
+    width: 50vw;  
+  }
+  
+  
+  .footer-right a {
+    font-size: 3.3vw;
+  }
+
+  .logo_footer {
+    width: 25vw;
+    padding-top: 20px;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  header img {
+    width: 20vw;
+  }
+
+  .header-right a {
+    font-size: 3.2vw;
+    margin: 2vw
+  }
+
+  footer img {
+    width: 50vw;  
+  }
+  
+  
+  .footer-right a {
+    font-size: 4.5vw;
+  }
+
+  .logo_footer {
+    width: 28vw;
+    padding-top: 20px;
+  }
+
 }
