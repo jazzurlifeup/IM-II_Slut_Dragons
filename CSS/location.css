@@ -1,40 +1,44 @@
-body{
-    color: white;
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .location-title {
-    font-family: 'Rickmortytitle', sans-serif; 
-    text-align: center; 
-    margin: 50px 0; 
-    padding: 50px ;
-    
+  font-family: 'Rickmortytitle', sans-serif;
+  text-align: center;
+  margin: 50px 0;
+  padding: 50px;
+
 }
 
 .location-title h1 {
-    font-family: "Rickmortytitle";
-    font-size: 10vw; 
-    margin: 0; 
-    color: #23c7c1; 
-    
+  font-family: "Rickmortytitle";
+  font-size: 10vw;
+  margin: 0;
+  color: #23c7c1;
+
 }
 
 .location-title h1 {
-    -webkit-animation: glow 3s ease-in-out infinite alternate;
-    -moz-animation: glow 3s ease-in-out infinite alternate;
-    animation: glow 3s ease-in-out infinite alternate;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
-    }
-    to {
-      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
-    }
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
   }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+  }
+}
+
 .location-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
