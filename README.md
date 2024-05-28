@@ -24,7 +24,7 @@ Wir hatten folgende Schwierigkeiten:
 - JavaScript ist sehr abstrakt und es war zu beginn schwierig zu verstehen, was codiert wurde und was für Auswirkungen dies hat.
 - Brauchte eine Weile mit Aufzeichnungen von Moodle, Tutorials und Chat GPT um herauszufinden wie wir nun die Daten vom API abrufen können und wie wir es in der Webseite integrieren können.
 - Das Zusammenspiel zwischen JavaScript und CSS brauchte eine Weile um zu verstehen wie wir im CSS die Daten vom JS abrufen und gestalten können.
-- Allgemein war das Gestalten der API Daten eine Schwierigkeit, um sicherzustellen, dass die Daten korrekt im Browser dargestellt werden.
+- Allgemein war das Gestalten der API Daten eine Schwierigkeit, um sicherzustellen, dass die Daten korrekt im Browser dargestellt werden und auch responsive sind.
 
 
 
