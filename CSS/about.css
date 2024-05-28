@@ -1,5 +1,3 @@
-
-
 .about-title { 
     font-family: 'Rickmortytitle', sans-serif; 
     text-align: center; 
@@ -13,10 +11,6 @@
     font-size: 10vw; 
     margin: 0; 
     color: #23c7c1; 
-    
-}
-
-.about-title h1 {
     -webkit-animation: glow 3s ease-in-out infinite alternate;
     -moz-animation: glow 3s ease-in-out infinite alternate;
     animation: glow 3s ease-in-out infinite alternate;
@@ -27,12 +21,11 @@
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01;
     }
     to {
-      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 020px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
+      text-shadow: 0 0 10px #fff, 0 0 15px #01ff01, 0 0 20px #01ff01, 0 0 25px #01ff01, 0 0 30px #01ff01, 0 0 35px #01ff01, 0 0 40px #01ff01;
     }
-  }
+}
 
-
-  .hello {
+.hello {
     grid-column: 7 / span 6;
     font-family: "futura";
     color: white;
@@ -41,7 +34,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
 .hello h2 {
     font-size: 5vw;
@@ -57,7 +50,6 @@
 
 .hello p {
     font-size: 2vw;
-
 }
 
 .team {
@@ -66,13 +58,11 @@
     gap: 16px; /* Define gaps between the grid items */
 }
 
-.team .pictures{
+.team .pictures {
     /* Define styles for pictures if needed */
 }
 
-
 .Stef { 
-    font-size: 2vw;
     grid-column: 2 / span 2;
     padding: 0%;
     display: flex;
@@ -80,12 +70,21 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.Stef h2 { 
+    font-size: 2vw;
+    color: white;
+    font-family: "futura";
+}
+
+.Stef p { 
+    font-size: 1vw;
     color: white;
     font-family: "futura";
 }
 
 .Jazz {
-    font-size: 2vw;
     grid-column: 6 / span 2;
     padding: 0%;
     display: flex;
@@ -93,12 +92,21 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.Jazz h2 {
+    font-size: 2vw;
+    color: white;
+    font-family: "futura";
+}
+
+.Jazz p {
+    font-size: 1vw;
     color: white;
     font-family: "futura";
 }
 
 .Marie { 
-    font-size: 2vw;
     grid-column: 10 / span 2;
     padding: 0%;
     display: flex;
@@ -106,9 +114,92 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.Marie h2 { 
+    font-size: 2vw;
     color: white;
     font-family: "futura";
 }
 
+.Marie p { 
+    font-size: 1vw;
+    color: white;
+    font-family: "futura";
+}
 
+/* Media Queries for Responsiveness */
 
+/* Small Devices (Tablets, 768px and down) */
+@media (max-width: 768px) {
+    .about-title h1 {
+        font-size: 15vw;
+    }
+
+    .hello {
+        grid-column: 1 / span 12;
+        padding: 20px;
+    }
+
+    .hello h2 {
+        font-size: 8vw;
+    }
+
+    .hello p {
+        font-size: 4vw;
+    }
+
+    .team {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .Stef, .Jazz, .Marie {
+        grid-column: span 6;
+        text-align: center;
+    }
+
+    .Stef h2, .Jazz h2, .Marie h2 {
+        font-size: 4vw;
+    }
+
+    .Stef p, .Jazz p, .Marie p {
+        font-size: 2vw;
+    }
+}
+
+/* Extra Small Devices (Phones, 600px and down) */
+@media (max-width: 600px) {
+    .about-title h1 {
+        font-size: 20vw;
+    }
+
+    .hello {
+        grid-column: 1 / span 12;
+        padding: 10px;
+    }
+
+    .hello h2 {
+        font-size: 10vw;
+    }
+
+    .hello p {
+        font-size: 5vw;
+    }
+
+    .team {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .Stef, .Jazz, .Marie {
+        grid-column: span 4;
+        text-align: center;
+    }
+
+    .Stef h2, .Jazz h2, .Marie h2 {
+        font-size: 6vw;
+    }
+
+    .Stef p, .Jazz p, .Marie p {
+        font-size: 3vw;
+    }
+}
