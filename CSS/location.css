@@ -82,7 +82,7 @@ body {
 /* Grid layout for location */
 .location-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   /* Creates a responsive grid */
 
 }
@@ -130,7 +130,7 @@ body {
 .close {
   color: #aaa;
   float: right;
-  font-size: 2vw;
+  font-size: 5vw;
   font-weight: bold;
 }
 
@@ -163,14 +163,22 @@ body {
   /* Center text inside grid items */
 }
 
+.location h2 {
+  font-size: 2.2vw;
+}
+
+.location p {
+  font-size: 1.7vw;
+}
+
 #locations button {
   background-color: rgb(255, 0, 208);
   margin-top: 1.6vw;
-  width: 14vw;
+  width: 100%;
   padding: 1vw 2vw;
   color: white;
   font-family: "futura";
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   border: none;
   box-shadow: 0.2vw 0.2vw #1a602099;
   border-radius: 30px;
@@ -184,4 +192,51 @@ body {
   background-color: rgb(144, 18, 121);
   box-shadow: 0 0.2vw #1a602000;
   transform: translateY(0.4vw);
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .searchbyname input[type="text"] {
+    width: 60vw;
+    font-size: 3.3vw;
+  }
+
+  .location h2 {
+    font-size: 3.5vw;
+  }
+  
+  .location p {
+    font-size: 2vw;
+  }
+
+  #locations button {
+    font-size: 2.6vw;
+  }
+  
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .searchbyname input[type="text"] {
+    width: 90vw;
+    font-size: 4.3vw;
+  }
+
+  .close {
+    font-size: 7vw;
+  }
+
+  .location h2 {
+    font-size: 6vw;
+  }
+  
+  .location p {
+    font-size: 3.5vw;
+  }
+  #locations button {
+    font-size: 5vw;
+  }
+  
+
 }
