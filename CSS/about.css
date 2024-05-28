@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: start;
     text-align: center;
     padding: 50px;
     margin-right: 50px;
@@ -94,13 +94,13 @@ body {
     box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
-.Stef h1 {
+.Stef h2 {
     font-size: 3vw;
     color: white;
     font-family: "futura";
 }
 
-.Stef h2 {
+.Stef h3 {
     font-size: 1.2vw;
     color: #23c7c1;
     font-family: "futura";
@@ -134,13 +134,13 @@ body {
     box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
-.Jazz h1 {
+.Jazz h2 {
     font-size: 3vw;
     color: white;
     font-family: "futura";
 }
 
-.Jazz h2 {
+.Jazz h3 {
     font-size: 1.2vw;
     color: #23c7c1;
     font-family: "futura";
@@ -170,13 +170,13 @@ body {
     box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
-.Marie h1 {
+.Marie h2 {
     font-size: 3vw;
     color: white;
     font-family: "futura";
 }
 
-.Marie h2 {
+.Marie h3 {
     font-size: 1.2vw;
     color: #23c7c1;
     font-family: "futura";

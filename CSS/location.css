@@ -74,7 +74,7 @@ body {
   width: 90%;
   margin: 1vw auto;
   padding: 1vw;
-  background-color: none;
+  background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Adds subtle shadow for depth */
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .grid-container div {
-  background-color: none;
+  background-color: transparent;
   /* Light background for each item */
   padding: 8px;
   /* Padding inside each grid item */
