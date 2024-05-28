@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .about-title {
     font-family: 'Rickmortytitle', sans-serif;
     text-align: center;
@@ -285,7 +290,7 @@
         font-size: 5vw;
         margin: 0;
         margin-top: 3vw;
-        
+
     }
 
     .team .pictures img {
