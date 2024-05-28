@@ -52,14 +52,17 @@
     font-size: 2vw;
 }
 
-.team {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /* Define a 12-column grid */
-    gap: 16px; /* Define gaps between the grid items */
+.team .pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adds space above and below the image */
 }
 
-.team .pictures {
-    /* Define styles for pictures if needed */
+.team .pictures img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 0%; /* Optional: Makes the image circular */
 }
 
 .Stef { 
@@ -84,6 +87,13 @@
     font-family: "futura";
 }
 
+.quote { 
+    font-size: 1vw;
+    color: white;
+    font-family: "futura";
+}
+
+
 .Jazz {
     grid-column: 6 / span 2;
     padding: 0%;
@@ -93,6 +103,8 @@
     align-items: center;
     text-align: left;
 }
+
+
 
 .Jazz h2 {
     font-size: 2vw;
@@ -128,9 +140,8 @@
     font-family: "futura";
 }
 
-/* Media Queries for Responsiveness */
 
-/* Small Devices (Tablets, 768px and down) */
+
 @media (max-width: 768px) {
     .about-title h1 {
         font-size: 15vw;
@@ -167,7 +178,7 @@
     }
 }
 
-/* Extra Small Devices (Phones, 600px and down) */
+
 @media (max-width: 600px) {
     .about-title h1 {
         font-size: 20vw;
