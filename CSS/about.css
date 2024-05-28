@@ -52,6 +52,13 @@
     font-size: 2vw;
 }
 
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 16px; 
+} 
+
 .team .pictures {
     display: flex;
     justify-content: center;
@@ -75,23 +82,23 @@
     text-align: left;
 }
 
-.Stef h2 { 
-    font-size: 2vw;
+.Stef h1 { 
+    font-size: 3vw;
     color: white;
     font-family: "futura";
 }
 
+.Stef h2 { 
+    font-size: 1vw;
+    color: #23c7c1;
+    font-family: "futura";
+}
 .Stef p { 
     font-size: 1vw;
     color: white;
     font-family: "futura";
 }
 
-.quote { 
-    font-size: 1vw;
-    color: white;
-    font-family: "futura";
-}
 
 
 .Jazz {
@@ -104,11 +111,15 @@
     text-align: left;
 }
 
-
+.Jazz h1 { 
+    font-size: 3vw;
+    color: white;
+    font-family: "futura";
+}
 
 .Jazz h2 {
-    font-size: 2vw;
-    color: white;
+    font-size: 1vw;
+    color: #23c7c1;
     font-family: "futura";
 }
 
@@ -128,9 +139,15 @@
     text-align: left;
 }
 
-.Marie h2 { 
-    font-size: 2vw;
+.Marie h1 { 
+    font-size: 3vw;
     color: white;
+    font-family: "futura";
+}
+
+.Marie h2 { 
+    font-size: 1vw;
+    color: #23c7c1;
     font-family: "futura";
 }
 
@@ -162,6 +179,11 @@
 
     .team {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+
+    .team {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .Stef, .Jazz, .Marie {
