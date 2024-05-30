@@ -10,7 +10,7 @@
 - Episoden Wikipedia mit deren Charakterdaten
 - Location Wikipedia mit deren Charakterdaten
 - Coole Animationen die dich durch ein Portal in eine andere Welt beamen
-- Versteckte Quotes von Rick und Morty (About us zeigt unseren lieblings quote :D )
+- Versteckte Quotes von Rick und Morty
 - Easter Egg: Willst du nicht auch wissen was für ein Rick and Morty Charakter du heute bist?
 
 ## Learnings
