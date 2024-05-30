@@ -2,7 +2,7 @@
  
  ## Kurzbeschreibung des Projekts
  
- Diese Webseite dreht sich rund um das Mulitverse von Rick and Morty. Nutzende können Informationen zu Charakteren, Locations und Episoden abrufen. Zudem gibt es noch ein Cookie, der Auskunft darüber gibt, welchen Charakter man heute ist. Das Design wurde so gestaltet, dass es die verrückte Welt der Serie einfängt.
+ Diese Webseite dreht sich rund um das Mulitverse von Rick and Morty. Nutzende können Informationen zu Charakteren, Locations und Episoden abrufen. Zudem gibt es noch ein Easter Egg, der Auskunft darüber gibt, welchen Charakter man heute ist. Das Design wurde so gestaltet, dass es die verrückte Welt der Serie einfängt.
 
 ## Features
 
@@ -11,7 +11,7 @@
 - Location Wikipedia mit deren Charakterdaten
 - Coole Animationen die dich durch ein Portal in eine andere Welt beamen
 - Versteckte Quotes von Rick und Morty (About us zeigt unseren lieblings quote :D )
-- Cookie: Willst du nicht auch wissen was für ein Rick and Morty Charakter du heute bist?
+- Easter Egg: Willst du nicht auch wissen was für ein Rick and Morty Charakter du heute bist?
 
 ## Learnings
 Im Rahmen unseres Projekts hatten wir folgende Learnings:
