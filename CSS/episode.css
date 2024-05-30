@@ -73,7 +73,7 @@ body {
     width: 95%;
     margin: 1vw auto;
     padding: 1vw;
-    background-color: none;
+    background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -140,7 +140,7 @@ body {
 .grid-container div {
     padding: 8px;
     text-align: left;
-    background-color: none;
+    background-color: transparent;
 }
 
 .close {
