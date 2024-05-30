@@ -38,7 +38,7 @@ Für die Umsetzung unseres Projekts haben wir diverse Ressourcen genutzt. Besond
 (Fyi Slut Dragons sind Charakteren von  Rick and Morty Season 4 Episode 4)
 
 - Jazz (Jasmin Spence)
-- Marie (Anna-Marie Hohl)
+- Marie (Anna-Maria Hohl)
 - Stef (Stefanie Hasler)
 
 MMP23B
