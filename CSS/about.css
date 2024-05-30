@@ -271,8 +271,21 @@ body {
     .Stef h2,
     .Jazz h2,
     .Marie h2 {
-        font-size: 1.5vw;
+        font-size: 3.2vw;
         padding: 20px;
+    }
+
+    .Stef h4,
+    .Jazz h4,
+    .Marie h4 {
+        font-size: 2vw;
+        padding: 20px;
+    }
+
+    .Stef h3,
+    .Jazz h3,
+    .Marie h3 {
+        font-size: 1.8vw;
     }
 
     .Stef p,
@@ -314,14 +327,7 @@ body {
         margin-bottom: 50px;
     }
 
-    .Stef h1,
-    .Jazz h1,
-    .Marie h1 {
-        font-size: 5vw;
-        margin: 0;
-        margin-top: 3vw;
-
-    }
+ 
 
     .team .pictures img {
         width: 40%;
@@ -335,7 +341,20 @@ body {
     .Stef h2,
     .Jazz h2,
     .Marie h2 {
+        font-size: 5vw;
+    }
+
+    .Stef h4,
+    .Jazz h4,
+    .Marie h4 {
         font-size: 3vw;
+        padding: 20px;
+    }
+
+    .Stef h3,
+    .Jazz h3,
+    .Marie h3 {
+        font-size: 2.8vw;
     }
 
     .Stef p,
@@ -343,5 +362,10 @@ body {
     .Marie p {
         font-size: 3.5vw;
         margin: 0;
+    }
+
+    .team .pictures img {
+        width: 65%;
+        /* Adjust the width as needed */
     }
 }
