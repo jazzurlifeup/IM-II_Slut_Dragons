@@ -57,9 +57,6 @@ main {
     font-family: "rickmortytitle";
     color: #23c7c1;
     font-size: 15vw;
-
-
-
 }
 
 .title-overlay h1 {
@@ -557,7 +554,6 @@ main {
 #characterImage,
 #characterName {
     display: none;
-    /* Hide elements initially */
 }
 
 

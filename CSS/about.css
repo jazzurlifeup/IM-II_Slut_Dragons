@@ -7,7 +7,7 @@ body {
     font-family: 'Rickmortytitle', sans-serif;
     text-align: center;
     margin: 50px 0;
-    padding-top: 50px;
+    padding: 50px;
     color: #333;
 }
 
@@ -20,6 +20,7 @@ body {
     -moz-animation: glow 3s ease-in-out infinite alternate;
     animation: glow 3s ease-in-out infinite alternate;
 }
+
 
 @keyframes glow {
     from {
@@ -78,16 +79,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    /* Adds space above and below the image */
 }
 
 .team .pictures img {
     width: 80%;
-    /* Adjust the width as needed */
     height: auto;
-    /* Maintain the aspect ratio */
     border-radius: 0%;
-    /* Optional: Makes the image circular */
 }
 
 .Stef {
@@ -331,11 +328,8 @@ body {
 
     .team .pictures img {
         width: 40%;
-        /* Adjust the width as needed */
         height: auto;
-        /* Maintain the aspect ratio */
         border-radius: 0%;
-        /* Optional: Makes the image circular */
     }
 
     .Stef h2,

@@ -59,13 +59,11 @@ body {
 /* Optional: Style placeholder text */
 .searchbyname input[type="text"]::placeholder {
   color: #999;
-  /* Adjust placeholder color as needed */
 }
 
 /* Optional: Style when the input field is focused */
 .searchbyname input[type="text"]:focus {
   outline: none;
-  /* Remove default focus outline */
 }
 
 
@@ -76,10 +74,8 @@ body {
   padding: 1vw;
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Adds subtle shadow for depth */
 }
 
-/* Grid layout for location */
 .location-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -148,19 +144,14 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  /* Creates as many columns as can fit */
   gap: 3vw;
-  /* Space between grid items */
 
 }
 
 .grid-container div {
   background-color: transparent;
-  /* Light background for each item */
   padding: 8px;
-  /* Padding inside each grid item */
   text-align: left;
-  /* Center text inside grid items */
 }
 
 .location h2 {

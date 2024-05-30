@@ -127,7 +127,6 @@ body {
 /* Optional: Style placeholder text */
 .searchbyname input[type="text"]::placeholder {
     color: #999;
-    /* Adjust placeholder color as needed */
 }
 
 /* Optional: Style when the input field is focused */
@@ -199,23 +198,15 @@ body {
 /* The Modal (background) */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.7);
-    /* Black w/ opacity */
 
     font-family: "futura";
     color: rgb(47, 255, 172);
@@ -227,30 +218,23 @@ body {
     position: relative;
     background-color: rgb(59, 28, 80);
     margin: 15% auto;
-    /* 15% from the top and centered */
     padding: 20px;
     border: 0.5vw solid greenyellow;
     width: 70%;
-    /* Could be more or less, depending on screen size */
     display: flex;
-    /* Enables flexbox properties */
     flex-direction: column;
     align-items: center;
-    /* Center align the content */
     box-shadow: 10px 10px 10px rgba(14, 203, 83, 0.466);
 }
 
 .modal-body {
     display: flex;
     width: 100%;
-    /* Full width of the modal content */
 }
 
 .modal-image-container {
     max-width: 100%;
-    /* Ensures the image is never wider than its container */
     height: auto;
-    /* Maintains the aspect ratio */
     border-radius: 5px;
 
 }
@@ -261,14 +245,10 @@ body {
 
 .modal-info-container {
     flex: 1;
-    /* Takes 1/2 of the space */
     padding: 10px;
-    /* Padding around the text */
     display: flex;
     flex-direction: column;
-    /* Stack the info vertically */
     justify-content: center;
-    /* Center align the info vertically */
 }
 
 
@@ -284,7 +264,6 @@ body {
     margin: 0.8vw 0;
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 1vw;

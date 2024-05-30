@@ -75,10 +75,8 @@ body {
     padding: 1vw;
     background-color: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Adds subtle shadow for depth */
 }
 
-/* Grid layout for episodes */
 .episode-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
